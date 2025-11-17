@@ -1,99 +1,138 @@
-<h1>Amazon Wi-Fi Routers Analysis</h1>
-<h3>Web Scraping | Python | EDA | Visualization | Streamlit</h3>
+Amazon Wi-Fi Routers Analysis
+Web Scraping | Python | EDA | Visualization | Streamlit
+This project involves scraping Wi-Fi router listings from Amazon India, cleaning the dataset, and performing Exploratory Data Analysis (EDA) to understand pricing patterns, brand popularity, and market trends.
+An interactive Streamlit dashboard is included for easy exploration.
 
-<p>
-This project focuses on scraping Wi-Fi router listings from <strong>Amazon India</strong>, cleaning the extracted data,
-and performing a complete <strong>Exploratory Data Analysis (EDA)</strong> to uncover pricing patterns,
-brand popularity, and market trends.
-</p>
+Project Overview
 
-<hr>
 
-<h2>Project Overview</h2>
-<p>
-I scraped multiple pages of Amazon India for Wi-Fi Router data using <strong>BeautifulSoup</strong> and analyzed the dataset
-using <strong>Python, Pandas, NumPy, Seaborn, and Matplotlib</strong>.
-A <strong>Streamlit dashboard</strong> was also built to make the insights interactive and easy to understand.
-</p>
+Scraped multiple Amazon India pages using BeautifulSoup
 
-<hr>
 
-<h2>Dataset Features</h2>
-<ul>
-  <li>Product Name</li>
-  <li>Brand</li>
-  <li>Price</li>
-  <li>Old Price</li>
-  <li>Discount</li>
-  <li>Ratings</li>
-  <li>Reviews Count</li>
-  <li>Deal/Offer Information</li>
-  <li>Product Link</li>
-</ul>
+Cleaned and processed the collected data
 
-<hr>
 
-<h2>Key Insights</h2>
+Conducted EDA using Pandas, NumPy, Matplotlib, and Seaborn
 
-<h3>1. Most Popular Brands</h3>
-<p>TP-Link, D-Link, and Tenda dominate the market.</p>
 
-<h3>2. Highest Average Price Brand</h3>
-<p>GEONIX has the highest average price among all brands.</p>
+Built a Streamlit web app to present insights visually
 
-<h3>3. Price vs Sales Relationship</h3>
-<p>
-There is a weak negative correlation – higher-priced routers tend to sell slightly less.
-</p>
 
-<h3>4. Premium vs Budget Market</h3>
-<p>Premium routers have lower sales volume; mid-range models sell more.</p>
 
-<h3>5. Brand Market Share</h3>
-<p>Top brands cover approximately 78% of total products.</p>
+Dataset Features
+The dataset contains:
 
-<hr>
 
-<h2>Visualizations Included</h2>
-<ul>
-  <li>Brand-wise product count</li>
-  <li>Price distribution</li>
-  <li>Correlation heatmap</li>
-  <li>Brand market share</li>
-  <li>Scatterplots (Price vs Ratings, Price vs Reviews)</li>
-  <li>Interactive Streamlit dashboard</li>
-</ul>
+Product Name
 
-<hr>
 
-<h2>Tools and Technologies Used</h2>
-<ul>
-  <li>Python</li>
-  <li>Pandas</li>
-  <li>NumPy</li>
-  <li>BeautifulSoup</li>
-  <li>Requests</li>
-  <li>Matplotlib</li>
-  <li>Seaborn</li>
-  <li>Streamlit</li>
-</ul>
+Brand
 
-<hr>
 
-<h2>Steps in the Project</h2>
-<ol>
-  <li>Scraped data using BeautifulSoup</li>
-  <li>Cleaned and pre-processed the dataset</li>
-  <li>Performed EDA (univariate, bivariate, multivariate)</li>
-  <li>Created visualizations and insights</li>
-  <li>Developed an interactive Streamlit dashboard</li>
-</ol>
+Price
 
-<hr>
 
-<h2>Project Structure</h2>
+Old Price
 
-<pre>
+
+Discount
+
+
+Ratings
+
+
+Reviews Count
+
+
+Deal/Offer Information
+
+
+Product Link
+
+
+
+Key Insights
+1. Most Popular Brands
+TP-Link, D-Link, and Tenda lead in the number of listed products.
+2. Highest Average Price Brand
+GEONIX has the highest average router price.
+3. Price vs Sales
+A weak negative correlation indicates that higher-priced routers tend to sell slightly less.
+4. Premium vs Budget Market
+Premium routers have lower visibility and sales compared to mid-range models.
+5. Market Share
+Top brands account for approximately 78% of all listed routers.
+
+Visualizations Included
+
+
+Brand-wise product count
+
+
+Price distribution
+
+
+Correlation heatmap
+
+
+Brand market share
+
+
+Scatterplots for price vs ratings
+
+
+Streamlit interactive dashboard
+
+
+
+Tools and Technologies Used
+
+
+Python
+
+
+Pandas
+
+
+NumPy
+
+
+BeautifulSoup
+
+
+Requests
+
+
+Matplotlib
+
+
+Seaborn
+
+
+Streamlit
+
+
+
+Steps in the Project
+
+
+Web scraping using BeautifulSoup
+
+
+Cleaning and preprocessing the dataset
+
+
+Performing EDA
+
+
+Creating plots and visual insights
+
+
+Developing the Streamlit dashboard
+
+
+
+Project Structure
 Amazon-Routers-Analysis/
 │
 ├── data/
@@ -103,35 +142,30 @@ Amazon-Routers-Analysis/
 ├── notebooks/
 │     └── amazon_router_eda.ipynb
 │
-├── images/        (Screenshots go here)
+├── images/                 (Screenshots go here)
 │     ├── price_distribution.png
 │     ├── brand_sales.png
 │     ├── heatmap.png
 │     └── dashboard.png
 │
-├── app.py         (Streamlit App)
-├── scraper.py     (Web Scraper)
-└── README.html
-</pre>
+├── app.py                  (Streamlit App)
+├── scraper.py              (Web Scraper)
+└── README.md
 
-<hr>
 
-<h2>Screenshots</h2>
-<p>Add your images to the <code>images/</code> folder and reference them like this:</p>
+Screenshots
+Add images to the images/ folder and reference them like this:
+![Dashboard](images/dashboard.png)
 
-<pre>
-<img src="images/dashboard.png" width="600">
-</pre>
 
-<hr>
+How to Run
+1. Clone the repository
+git clone https://github.com/yourusername/Amazon-Routers-Analysis
 
-<h2>How to Run</h2>
+2. Install the required packages
+pip install -r requirements.txt
 
-<p><strong>1. Clone the Repository</strong></p>
-<pre>git clone https://github.com/yourusername/Amazon-Routers-Analysis</pre>
+3. Run the Streamlit app
+streamlit run app.py
 
-<p><strong>2. Install Dependencies</strong></p>
-<pre>pip install -r requirements.txt</pre>
 
-<p><strong>3. Run the Streamlit App</strong></p>
-<pre>streamlit run app.py</pre>
